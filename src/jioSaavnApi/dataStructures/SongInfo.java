@@ -8,6 +8,7 @@ public class SongInfo {
 	private String id;
 	private String song;
 	private String album;
+	private String albumid;
 	private String year;
 	private String primary_artists;
 	private String singers;
@@ -24,6 +25,7 @@ public class SongInfo {
 		this.id=(String)js.get("id");
 		this.song=(String)js.get("song");
 		this.album=(String)js.get("album");
+		this.albumid=(String)js.get("albumid");
 		this.year=(String)js.get("year");
 		this.primary_artists=(String)js.get("primary_artists");
 		this.singers=(String)js.get("singers");
@@ -87,6 +89,10 @@ public class SongInfo {
 
 	public String getAlbum() {
 		return album;
+	}
+
+	public String getAlbumId() {
+		return albumid;
 	}
 
 	public String getYear() {

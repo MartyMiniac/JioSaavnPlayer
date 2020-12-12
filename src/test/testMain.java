@@ -1,4 +1,4 @@
-package main;
+package test;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import jioSaavnApi.SongRecommendation;
 import jioSaavnApi.dataStructures.QuerySongInfo;
 import jioSaavnApi.dataStructures.SongInfo;
 
-public class Main {
+public class testMain {
 	public static Scanner in = new Scanner(System.in);
 	public static ArrayList<SongInfo> al = new ArrayList<SongInfo>();
 	
@@ -34,7 +34,7 @@ public class Main {
 		System.out.println("\n\n\nSongs in the PlayList");
 		int count=1;
 		for(SongInfo i:al) {
-			System.out.println((count++)+":\t"+i.getSong()+" [Album : "+i.getAlbum()+"] [Artist : "+i.getPrimary_artists()+"]");
+			System.out.println((count++)+":\t"+i.getSong()+" of Album "+i.getAlbum()+" [Artist : "+i.getPrimary_artists()+"]");
 		}
 		
 		try {
